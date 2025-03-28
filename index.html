@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Poly Track - an exciting online racing game with customizable tracks and thrilling competitions.">
+    <title>Poly Track | Thrilling Online Racing Experience</title>
+    <link rel="canonical" href="https://polytrack.ink" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            green: '#34C759',
+                            indigo: '#5856D6',
+                            orange: '#FF9500',
+                            pink: '#FF2D55',
+                            purple: '#AF52DE',
+                            red: '#FF3B30',
+                            teal: '#5AC8FA',
+                            yellow: '#FFCC00',
+                            gray: {
+                                100: '#F2F2F7',
+                                200: '#E5E5EA',
+                                300: '#D1D1D6',
+                                400: '#C7C7CC',
+                                500: '#AEAEB2',
+                                600: '#8E8E93',
+                                700: '#636366',
+                                800: '#48484A',
+                                900: '#3A3A3C',
+                                950: '#1C1C1E',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .game-container {
+            aspect-ratio: 16 / 9;
+            max-height: 80vh;
+        }
+        @media (max-width: 768px) {
+            .game-container {
+                aspect-ratio: 4 / 3;
+                height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray-100 dark:bg-apple-gray-900 text-apple-gray-900 dark:text-white">
+    <header class="bg-apple-blue py-4 shadow-lg">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl md:text-3xl font-bold text-white">Poly Track</h1>
+                <p class="hidden md:block text-white font-medium">Race, compete, conquer</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-6 py-8">
+        <section class="mb-12 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-apple-blue">Poly Track: The Ultimate Online Racing Experience</h1>
+            <p class="text-xl text-apple-gray-700 dark:text-apple-gray-300 max-w-3xl mx-auto">
+                Experience the thrill of high-speed racing on dynamically generated tracks in this adrenaline-fueled racing game.
+            </p>
+        </section>
+
+        <section class="mb-12">
+            <div class="game-container w-full bg-apple-gray-200 dark:bg-apple-gray-800 rounded-xl overflow-hidden shadow-xl mx-auto">
+                <iframe 
+                    src="https://app-polytrack.kodub.com/0.4.2/?" 
+                    class="w-full h-full border-0" 
+                    allowfullscreen 
+                    loading="lazy"
+                    title="Play Poly Track Online">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white dark:bg-apple-gray-800 p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold mb-4 text-apple-pink">How to Play</h2>
+                <ul class="space-y-2 text-apple-gray-800 dark:text-apple-gray-200">
+                    <li class="flex items-start">
+                        <span class="text-apple-blue mr-2">•</span>
+                        <span>Use arrow keys or WASD to control your vehicle</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-apple-blue mr-2">•</span>
+                        <span>Master drifting techniques for sharp turns</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-apple-blue mr-2">•</span>
+                        <span>Collect power-ups to boost your speed or impede opponents</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-apple-blue mr-2">•</span>
+                        <span>Complete laps in the shortest time to earn top rankings</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white dark:bg-apple-gray-800 p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold mb-4 text-apple-green">Game Features</h2>
+                <ul class="space-y-2 text-apple-gray-800 dark:text-apple-gray-200">
+                    <li class="flex items-start">
+                        <span class="text-apple-green mr-2">•</span>
+                        <span>Multiple race tracks with varying difficulty levels</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-apple-green mr-2">•</span>
+                        <span>Customizable vehicles with unique handling characteristics</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-apple-green mr-2">•</span>
+                        <span>Realistic physics engine for authentic racing experience</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-apple-green mr-2">•</span>
+                        <span>Compete against AI or challenge friends in multiplayer mode</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-apple-purple">About Poly Track</h2>
+            <div class="bg-white dark:bg-apple-gray-800 p-6 rounded-xl shadow-lg">
+                <p class="text-apple-gray-800 dark:text-apple-gray-200 mb-4">
+                    Poly Track is an exhilarating racing game that puts players behind the wheel of high-performance vehicles on dynamically generated tracks. 
+                    The game combines realistic physics with arcade-style fun to create an accessible yet challenging racing experience.
+                </p>
+                <p class="text-apple-gray-800 dark:text-apple-gray-200 mb-4">
+                    Each track features unique terrain, obstacles, and shortcuts that require strategic driving and quick reflexes to master. 
+                    As you progress, you'll unlock faster cars, more challenging tracks, and competitive race events.
+                </p>
+                <p class="text-apple-gray-800 dark:text-apple-gray-200">
+                    Whether you're a casual player looking for quick racing thrills or a dedicated driver aiming to top the global leaderboards, 
+                    Poly Track offers endless replayability and excitement. Start your engines and experience the rush today!
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-6 text-apple-orange">Racing Tips & Strategies</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-apple-gray-800 p-5 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-teal">Perfect Your Racing Line</h3>
+                    <p class="text-apple-gray-800 dark:text-apple-gray-200">
+                        Take wide entries into corners and aim for tight exits to maintain maximum speed throughout the track.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-800 p-5 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-teal">Master Drift Techniques</h3>
+                    <p class="text-apple-gray-800 dark:text-apple-gray-200">
+                        Learn to initiate controlled drifts early in turns to maintain momentum and achieve faster lap times.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-800 p-5 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-teal">Strategic Boost Usage</h3>
+                    <p class="text-apple-gray-800 dark:text-apple-gray-200">
+                        Save your boost power-ups for long straightaways where you can maximize their effectiveness without losing control.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center">
+                <p class="mb-2">&copy; 2024 Poly Track. All rights reserved.</p>
+                <p class="text-apple-gray-400 text-sm">
+                    Poly Track is an online racing game focused on delivering thrilling high-speed competitions.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
